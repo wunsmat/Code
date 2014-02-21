@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homework 4</title>
+<link href="hw4.css" rel="stylesheet" type="text/css">
+	<script>
+		function sRight()
+		{
+			var right = document.getElementById("right").src;
+			var left = document.getElementById("left").src;
+			var center = document.getElementById("center").src;
+			document.getElementById("right").src=center;
+			document.getElementById("center").src=left;
+			document.getElementById("left").src=right;
+			
+		}
+		function sLeft()
+		{
+			var right = document.getElementById("right").src;
+			var left = document.getElementById("left").src;
+			var center = document.getElementById("center").src;
+			document.getElementById("right").src=left;
+			document.getElementById("center").src=right;
+			document.getElementById("left").src=center;
+		}
+		function shuffle()
+		{
+			var rnd = Math.floor((Math.random()*6)+1);
+			var one = document.getElementById("right").src;
+			var two = document.getElementById("left").src;
+			var three = document.getElementById("center").src;
+			if(rnd === 1)
+			{
+			document.getElementById("right").src=one;
+			document.getElementById("center").src=two;
+			document.getElementById("left").src=three;
+			}
+			else if(rnd === 2)
+			{
+			document.getElementById("right").src=three;
+			document.getElementById("center").src=two;
+			document.getElementById("left").src=one;
+			}
+			else if(rnd === 3)
+			{
+			document.getElementById("right").src=one;
+			document.getElementById("center").src=three;
+			document.getElementById("left").src=two;
+			}
+			else if(rnd === 4)
+			{
+			document.getElementById("right").src=three;
+			document.getElementById("center").src=one;
+			document.getElementById("left").src=two;
+			}
+			else if(rnd === 5)
+			{
+			document.getElementById("right").src=two;
+			document.getElementById("center").src=one;
+			document.getElementById("left").src=three;
+			}
+			else if(rnd === 6)
+			{
+			document.getElementById("right").src=two;
+			document.getElementById("center").src=three;
+			document.getElementById("left").src=one;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div id="page">
+    	<div id="headback"><h1 id="header">Homework 4</h1><img src="bat.png" id="bat" width="90" height="45">
+        </div><br/>
+        <div id="content">
+       	  <div id="img">
+            <div class="right"><img id="right" src="knight.png"></div>
+        	<div class="left"><img id="left" src="dragon.png"></div>
+            <div class="center"><img id="center" src="gobo.gif"></div>
+            </div>
+ 			<div>
+            <div class="right"><button class="btn" onClick="sRight()">Shift Right</button></div>
+        	<div class="left"><button class="btn" onClick="sLeft()">Shift Left</button></div>
+            <div class="center"><button class="btn" onClick="shuffle()">Shuffle</button></div>
+            </div>
+        </div>
+        <div id="footer">
+         	<br/>
+          <p>This homework assignment is brought to by Matt Wunschel.</p>
+        </div>
+</div>
+</body>
+</html>

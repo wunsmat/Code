@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Tic-Tac-Toe</title>
+<link href="Tic-Tac-Toe.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="Tic-Tac-Toe.js"></script>
+<script type="text/javascript" src="jquery-2.0.0.min.js"></script>
+</head>
+
+<body onLoad="start()">
+<div id="page">
+<h1>Extreme Tic-Tac-Toe!!! </h1>
+<div id="pTurn"></div>
+<table border="2" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id="topLeft" onClick="topLeft()">&nbsp;</td>
+    <td id="topMiddle" onClick="topMiddle()">&nbsp;</td>
+    <td id="topRight" onClick="topRight()">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="midLeft" onClick="midLeft()">&nbsp;</td>
+    <td id="midMiddle" onClick="midMiddle()">&nbsp;</td>
+    <td id="midRight" onClick="midRight()">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="botLeft" onClick="botLeft()">&nbsp;</td>
+    <td id="botMiddle" onClick="botMiddle()">&nbsp;</td>
+    <td id="botRight" onClick="botRight()">&nbsp;</td>
+  </tr>
+</table>
+<div id="bottom">
+Player Wins:<span id="pCount">0</span>
+<br>Computer Wins:<span id="cCount">0</span>
+<br>Ties:<span id="tCount">0</span>
+<br><br><button class="btn" onClick="start()">Reset</button>
+</div>
+</div>
+
+</body>
+</html>

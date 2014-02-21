@@ -1,0 +1,46 @@
+A: Bacon, Kevin
+Few Good Men, A
+Animal House
+
+A: Cruise, Tom
+Few Good Men, A
+Far And Away
+Minority Report
+
+M: Disclosure
+Moore, Demi
+Douglas, Michael
+
+A: Moore, Demi
+Few Good Men, A
+Disclosure
+Nothing But Trouble
+
+M: Animal House
+Belushi, Jim
+
+M: Blues Brothers, The
+Belushi, Jim
+Aykroyd, Dan
+
+M: Nothing But Trouble
+Chase, Chevy
+Moore, Demi
+Aykroyd, Dan
+
+M: Ghostbusters
+Aykroyd, Dan
+Murray, Bill
+
+M: Minority Report
+Cruise, Tom
+von Sydow, Max
+Farrell, Colin
+
+M: Flash Gordon
+von Sydow, Max
+Dalton, Timothy
+
+M: Far And Away
+Cruise, Tom
+Kidman, Nicole
